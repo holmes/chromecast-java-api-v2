@@ -47,7 +47,7 @@ public class MediaTest {
     }
 
     @Test
-    public void itDoseNotContainOptionalFieldsWhenNotSet() throws Exception {
+    public void itDoesNotContainOptionalFieldsWhenNotSet() throws Exception {
         Media m = new Media(null, null, null, null, null, null, null, null);
 
         String json = jsonMapper.writeValueAsString(m);
